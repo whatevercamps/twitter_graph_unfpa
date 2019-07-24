@@ -60,7 +60,7 @@ var canvas = d3.select("#network"),
 
 var transform = d3.zoomIdentity;
 
-d3.json("graph.json").then(function (graph, err) {
+d3.json("https://raw.githubusercontent.com/whatevercamps/twitter_graph_unfpa.github.io/master/graph.json").then(function (graph, err) {
 	if (err) throw err;
 
 	simulation.nodes(graph.nodes);
